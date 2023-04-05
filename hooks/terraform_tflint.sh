@@ -32,7 +32,7 @@ function main {
     return ${exit_code}
   }
 
-  common::per_dir_hook "$HOOK_ID" "${#ARGS[@]}" "${ARGS[@]}" "${FILES[@]}"
+  common::per_dir_hook "$HOOK_ID" "${#ARGS[@]}" ${ARGS[@]} "${FILES[@]}"
 }
 
 #######################################################################
